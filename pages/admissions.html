@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Devi Academy Senior Secondary School</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Devi Academy</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="announcements.html">Announcements</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="donate.html" class="donate-btn">Donate</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="admissions-page">
+        <section class="page-header">
+            <h1>Admissions</h1>
+            <p>Join our vibrant learning community</p>
+        </section>
+
+        <section class="admission-process container">
+            <h2>Admission Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Submit Application</h3>
+                    <p>Complete the online application form with all required documents</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Entrance Test</h3>
+                    <p>Appear for the entrance examination</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Interview</h3>
+                    <p>Personal interview with student and parents</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Confirmation</h3>
+                    <p>Receipt of admission confirmation and fee payment</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="admission-form container">
+            <h2>Application Form</h2>
+            <form id="admissionForm" class="contact-form">
+                <div class="form-group">
+                    <label for="studentName">Student's Full Name *</label>
+                    <input type="text" id="studentName" name="studentName" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob">Date of Birth *</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="grade">Applying for Grade *</label>
+                        <select id="grade" name="grade" required>
+                            <option value="">Select Grade</option>
+                            <option value="6">Grade 6</option>
+                            <option value="7">Grade 7</option>
+                            <option value="8">Grade 8</option>
+                            <option value="9">Grade 9</option>
+                            <option value="10">Grade 10</option>
+                            <option value="11">Grade 11</option>
+                            <option value="12">Grade 12</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="parentName">Parent/Guardian Name *</label>
+                    <input type="text" id="parentName" name="parentName" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address *</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="previousSchool">Previous School (if any)</label>
+                    <input type="text" id="previousSchool" name="previousSchool">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="fee-structure container">
+            <h2>Fee Structure</h2>
+            <div class="fee-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Grade Level</th>
+                            <th>Admission Fee</th>
+                            <th>Term Fee</th>
+                            <th>Annual Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grade 6-8</td>
+                            <td>₹25,000</td>
+                            <td>₹30,000</td>
+                            <td>₹15,000</td>
+                        </tr>
+                        <tr>
+                            <td>Grade 9-10</td>
+                            <td>₹30,000</td>
+                            <td>₹35,000</td>
+                            <td>₹20,000</td>
+                        </tr>
+                        <tr>
+                            <td>Grade 11-12</td>
+                            <td>₹35,000</td>
+                            <td>₹40,000</td>
+                            <td>₹25,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@deviacademy.edu</p>
+                <p>Phone: +1 234 567 8900</p>
+                <p>Address: Your School Address</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Devi Academy Senior Secondary School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
