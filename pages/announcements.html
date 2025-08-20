@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements - Devi Academy Senior Secondary School</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Same header as other pages -->
+    <header>
+        <nav class="navbar">
+            <!-- Same navigation content -->
+        </nav>
+    </header>
+
+    <main class="announcements-page">
+        <section class="page-header">
+            <h1>Announcements</h1>
+            <p>Stay Updated with School News</p>
+        </section>
+
+        <section class="announcements-container container">
+            <div class="announcement-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="academic">Academic</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+                <button class="filter-btn" data-filter="cultural">Cultural</button>
+            </div>
+
+            <div class="announcements-grid">
+                <div class="announcement-card academic">
+                    <div class="announcement-date">
+                        <span class="day">20</span>
+                        <span class="month">Aug</span>
+                    </div>
+                    <div class="announcement-content">
+                        <h3>Final Examination Schedule Released</h3>
+                        <p>The final examination schedule for all grades has been released. Please check the academic calendar for details.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                    <span class="badge academic">Academic</span>
+                </div>
+
+                <div class="announcement-card sports">
+                    <div class="announcement-date">
+                        <span class="day">18</span>
+                        <span class="month">Aug</span>
+                    </div>
+                    <div class="announcement-content">
+                        <h3>Annual Sports Meet</h3>
+                        <p>The annual sports meet will be held from September 5-7. Registration for various events is now open.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                    <span class="badge sports">Sports</span>
+                </div>
+
+                <div class="announcement-card cultural">
+                    <div class="announcement-date">
+                        <span class="day">15</span>
+                        <span class="month">Aug</span>
+                    </div>
+                    <div class="announcement-content">
+                        <h3>Cultural Fest 2025</h3>
+                        <p>Join us for the biggest cultural festival of the year. Showcasing talent in music, dance, and art.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                    <span class="badge cultural">Cultural</span>
+                </div>
+
+                <!-- More announcement cards -->
+            </div>
+
+            <div class="announcements-pagination">
+                <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                <span class="current-page">1</span>
+                <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Same footer as other pages -->
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
