@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Devi Academy Senior Secondary School</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main class="donate-page">
+        <section class="page-header">
+            <h1>Support Our School</h1>
+            <p>Help Us Shape Future Leaders</p>
+        </section>
+
+        <section class="donation-options container">
+            <h2>Ways to Give</h2>
+            <div class="donation-cards">
+                <div class="donation-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Scholarship Fund</h3>
+                    <p>Support deserving students with financial assistance</p>
+                    <button class="btn-donate">Donate Now</button>
+                </div>
+
+                <div class="donation-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Library Fund</h3>
+                    <p>Help us expand our library resources</p>
+                    <button class="btn-donate">Donate Now</button>
+                </div>
+
+                <div class="donation-card">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Technology Fund</h3>
+                    <p>Support digital learning initiatives</p>
+                    <button class="btn-donate">Donate Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="donation-form container">
+            <h2>Make a Donation</h2>
+            <form id="donateForm" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Donation Amount *</label>
+                    <div class="amount-buttons">
+                        <button type="button" class="amount-btn">₹1,000</button>
+                        <button type="button" class="amount-btn">₹5,000</button>
+                        <button type="button" class="amount-btn">₹10,000</button>
+                        <button type="button" class="amount-btn custom">Custom Amount</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fund">Select Fund *</label>
+                    <select id="fund" required>
+                        <option value="">Choose a fund</option>
+                        <option value="scholarship">Scholarship Fund</option>
+                        <option value="library">Library Fund</option>
+                        <option value="technology">Technology Fund</option>
+                        <option value="general">General Fund</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message (Optional)</label>
+                    <textarea id="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Proceed to Payment</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
