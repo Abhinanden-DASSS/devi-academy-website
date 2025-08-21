@@ -8,6 +8,18 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.classList.toggle('active');
     });
 
+    // Handle dropdown menus on mobile
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                this.classList.toggle('active');
+            }
+        });
+    });
+
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -96,31 +108,5 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.style.backgroundColor = '#fff';
             navbar.style.boxShadow = 'none';
         }
-    });
-});
-
-// Add this to your existing main.js file
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Existing hamburger menu code...
-    // Hamburger menu functionality
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    });
-
-    // Handle dropdown menus on mobile
-    const dropdowns = document.querySelectorAll('.dropdown');
-    
-    dropdowns.forEach(dropdown => {
-        dropdown.addEventListener('click', function(e) {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                this.classList.toggle('active');
-            }
-        });
     });
 });
