@@ -787,60 +787,62 @@ tr:hover {
 /* Add these styles to your existing style.css file */
 
 /* Dropdown Menu Styles */
-.dropdown {
+.nav-links .dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content {
-    display: none;
+.nav-links .dropdown-content {
+    display: none; /* Hidden by default */
     position: absolute;
+    top: 100%;
+    left: 0;
     background-color: white;
     min-width: 200px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     border-radius: 5px;
     z-index: 1001;
-    padding: 0.5rem 0;
 }
 
-.dropdown:hover .dropdown-content {
+/* Only show dropdown content when hovering over the dropdown container */
+.nav-links .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown-content li {
+.nav-links .dropdown-content li {
     display: block;
     margin: 0;
     padding: 0;
 }
 
-.dropdown-content a {
+.nav-links .dropdown-content a {
     color: #333;
-    padding: 0.75rem 1rem;;
+    padding: 0.75rem 1rem;
     text-decoration: none;
     display: block;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.dropdown-content a:hover {
+.nav-links .dropdown-content a:hover {
     background-color: #f8f9fa;
     color: #3498db;
 }
 
-/* Responsive Dropdown */
+/* Mobile styles */
 @media screen and (max-width: 768px) {
-    .dropdown-content {
+    .nav-links .dropdown-content {
         position: static;
+        display: none;
         box-shadow: none;
         background-color: #f8f9fa;
-        display: none;
     }
 
-    .dropdown.active .dropdown-content {
+    .nav-links .dropdown.active .dropdown-content {
         display: block;
     }
 
-    .dropdown-content a {
-        padding-left: 2rem;
+    .nav-links .dropdown-content a {
+        padding-left: 3rem;
     }
 }
 
