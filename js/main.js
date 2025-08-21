@@ -98,3 +98,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Add this to your existing main.js file
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Existing hamburger menu code...
+
+    // Handle dropdown menus on mobile
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                this.classList.toggle('active');
+            }
+        });
+    });
+});
