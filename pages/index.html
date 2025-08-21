@@ -10,30 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h1>Devi Academy</h1>
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/about.html">About</a></li>
-                    <li><a href="pages/admissions.html">Admissions</a></li>
-                    <li><a href="pages/academics.html">Academics</a></li>
-                    <li><a href="pages/announcements.html">Announcements</a></li>
-                    <li><a href="pages/events.html">Events</a></li>
-                    <li><a href="pages/gallery.html">Gallery</a></li>
-                    <li><a href="pages/donate.html" class="donate-btn">Donate</a></li>
-                </ul>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+    
+    <div id="header"></div>
 
     <main>
         <section class="hero">
@@ -114,5 +92,12 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/include.js"></script>
+    <script>
+        // Load header when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            includeHTML('header', '/components/header.html');
+        });
+    </script>
 </body>
 </html>
