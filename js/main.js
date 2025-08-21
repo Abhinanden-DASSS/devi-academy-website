@@ -12,12 +12,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const dropdowns = document.querySelectorAll('.dropdown');
     
     dropdowns.forEach(dropdown => {
-        dropdown.addEventListener('click', function(e) {
+        const trigger = dropdown.querySelector('.dropdown-trigger');
+        
+        trigger.addEventListener('click', function(e) {
             if (window.innerWidth <= 768) {
                 e.preventDefault();
-                this.classList.toggle('active');
+                dropdown.classList.toggle('active');
             }
         });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.nav-links') && !e.target.closest('.hamburger')) {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
     });
 
     // Smooth scrolling for anchor links
