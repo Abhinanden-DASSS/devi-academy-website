@@ -780,3 +780,76 @@ tr:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* Add these styles to your existing style.css file */
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    display: block;
+    padding: 0;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f8f9fa;
+    color: #3498db;
+}
+
+/* Responsive Dropdown */
+@media screen and (max-width: 768px) {
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: #f8f9fa;
+        display: none;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        padding-left: 2rem;
+    }
+}
+
+/* About Section Pages Common Styles */
+.about-page,
+.founder-page,
+.directors-page,
+.staff-page,
+.affiliation-page {
+    padding-top: 80px;
+}
+
+.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
